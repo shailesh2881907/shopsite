@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    box-sizing: content-box;
+}
+header{
+width: 100%;
+ height: 400px;
+ background-image: url("images/backdrop.png");
+ background-size: cover;
+}
+
+.title{
+    width: 60%;
+    float: left;
+    height: inherit;
+    overflow: visible;
+}
+
+.title h1{
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(236, 41, 41, 0.89);
+}
+
+.title p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(3, 3, 3, 0.774);
+}
+
+.logo{
+    width: 40%;
+    background-image: url("images/logo.png");
+    float: left;
+    height: inherit;
+    image-rendering: optimizeQuality;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+section{
+    width: 100%;
+    background-color: rgb(62, 235, 163);
+}
+.product-section h3,h2{
+    text-align: center;
+    color: rgb(104, 97, 202);
+    font-size: 25px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.product-row{
+    display: flex;
+    justify-content: center;
+}
+
+.products{
+    box-sizing: border-box;
+    width: 25%;
+    margin:10px 20px;
+    height: 500px;
+    padding: 10px 10px;
+    background-color: rgb(235, 241, 241);
+    border-radius: 10px;
+}
+
+
+
+.product-image{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    background-color: rgb(235, 241, 241);
+ 
+}
+
+.product-image img{
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.product-text{
+    color: rgb(46, 46, 48);
+    padding:10px 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.contact{
+    padding: 20px;
+    width: 100%;
+    margin: 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: both;
+    color: black;
+    background-color: rgb(31, 187, 161);
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.contact span{
+    font-weight: bold;
+    color: rgb(131, 44, 189);
+}
+
+
+.loaction{
+    box-sizing: border-box;
+    height: 200px;
+    width: 50%;
+    background-image: url("images/map.png");
+    background-color: saddlebrown;
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width:480px){
+    .header{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 80px;
+    }
+    .logo{
+        width:100%;
+        margin-top: 0px;
+    }
+
+    .product-row{
+        display: block;
+    }
+    .products{
+        width: 100%;
+        height: auto;
+        margin:0px 0px;
+        font-size: 15px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    .product-image img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    .contact{
+        width:100% ;
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px 10px;
+        border-radius: 0px;
+    }
+}
